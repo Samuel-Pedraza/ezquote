@@ -1,0 +1,21 @@
+.form-for-quote {
+	position: fixed;
+	height: 350px;
+	width: 300px;
+	background-color: white;
+	bottom: 0;
+	text-align: center;
+	z-index: 25;
+	border: 1px solid black;
+	display: none;
+}
+
+.ezquote-container {
+	height: 100px;
+	width: 300px;
+	position: fixed;
+	bottom: 0;
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+}
