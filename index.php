@@ -52,12 +52,12 @@ function mail_submissions(){
 	$name = sanitize_text_field($_POST['name']);
 	$product = sanitize_text_field($_POST['product']);
 	$amount = sanitize_text_field($_POST['amount']);
-
-	$headers = '';
+	
+	$headers = array('Content-Type: text/html; charset=UTF-8');
 
 	$message = $location . $name . $product . $amount;
 
-	$send_mail = mail("samdpedraza@gmail.com", "Quote Submitted!", $message, $headers);
+	$send_mail = wp_mail("samdpedraza@gmail.com", "Quote Submitted!", $message, $headers);
 
 	if($send_mail){
 		echo "yup";
